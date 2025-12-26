@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: demo-minio
+
+minio:
+  endpoint: http://localhost:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket-name: mon-bucket
