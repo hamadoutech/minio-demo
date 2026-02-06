@@ -100,7 +100,7 @@ public class MinioService implements MinioServiceI {
         return files;
     }
 
-    @PostConstruct
+   /* @PostConstruct
     public void init() {
         try {
             boolean exists = minioClient.bucketExists(
@@ -114,7 +114,7 @@ public class MinioService implements MinioServiceI {
         } catch (Exception e) {
             throw new MinioException("Impossible de créer le bucket");
         }
-    }
+    }*/
 
     public void validerFichierAvantAjout(final MultipartFile file) {
         if (file.isEmpty()) {
